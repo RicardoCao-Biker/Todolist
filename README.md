@@ -1,6 +1,7 @@
-# cao
+# RICO notepad/todolist demo
 
-> A Vue.js project
+> A Vue.js project by RICO with memory&operable functions.
+  
 
 ## Build Setup
 
