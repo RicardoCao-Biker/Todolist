@@ -1,4 +1,4 @@
-# RICO notepad/todolist demo
+# RICO Todolist demo
 
 > A Vue.js project by RICO with memory&operable functions.
   
