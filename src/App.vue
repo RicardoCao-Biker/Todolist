@@ -2,7 +2,7 @@
   <div>
     <h1>{{title}}</h1>
     <div class="inputing"><input type="text" v-model="noteinfo">
-    <button @click="memory(item)">记录</button>
+      <button @click="memory(item)">记录</button>
     </div>
     <ul>
       <li v-for="item in items" @click='togglestatus(item)' :class='{isdone:item.done}' ><input type="checkbox" id="check">{{item.label}}</li>
@@ -11,11 +11,22 @@
 </template>
 
 <script>
+import Store from './store.js'
+
 export default {
   data:function(){
     return{
-    title : '我的备忘录',
-    items : [],
+    title : 'Rico备忘录',
+    items : Store.fetch(),
+    nodeinfo : ''
+    }
+  },
+  watch:{
+    items:{
+      handler:function(items){
+        Store.save(items)
+      },
+      deep:true
     }
   },
   methods:{
