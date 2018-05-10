@@ -1,4 +1,4 @@
-# RICO Todolist demo
+# RICO Todolist demo代办记事本
 
 > A Vue.js project by RICO with memory&operable functions.
 > 一个Todolist的小demo，实现了输入待办事项并通过localhost存储，勾选完成后改变对相应事件样式等简单功能。
